@@ -19,6 +19,18 @@
         "dst": "schema.yaml"
       },
       {
+        "src": "config.bastion",
+        "dst": "config.bastion"
+      },
+      {
+        "src": "inventory.tpl",
+        "dst": "inventory.tpl"
+      },
+      {
+        "src": "configure.sh",
+        "dst": "configure.sh"
+      },
+      {
         "src": "orm/variables.tf",
         "dst": "variables.tf"
       },
