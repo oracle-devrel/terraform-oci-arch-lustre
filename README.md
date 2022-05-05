@@ -59,7 +59,7 @@ region = "<oci_region>"
 # Compartment
 compartment_ocid = "<compartment_ocid>"
 
-# Availablity Domain 
+# Availability Domain 
 ad_number = <ad_number> # for example 0 for the first AD in the region.
 
 # or...
