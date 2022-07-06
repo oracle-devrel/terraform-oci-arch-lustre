@@ -8,6 +8,15 @@ variable "private_key_path" {}
 variable "region" {}
 variable "compartment_ocid" {}
 
+terraform {
+  required_version = ">= 1.0"
+  required_providers {
+    oci = {
+      source  = "oracle/oci"
+    }
+  }
+}
+
 provider "oci" {
   tenancy_ocid     = var.tenancy_ocid
   user_ocid        = var.user_ocid
@@ -128,8 +137,9 @@ resource "oci_core_subnet" "my_priv_fs_subnet" {
   dns_label                  = "fs"
 }
 
-module "terraform-oci-arch-lustre" {
-  source            = "github.com/oracle-devrel/terraform-oci-arch-lustre"
+module "arch-lustre" {
+  #source            = "github.com/oracle-devrel/terraform-oci-arch-lustre"
+  source            = "../../"
   tenancy_ocid      = var.tenancy_ocid
   user_ocid         = var.user_ocid
   fingerprint       = var.fingerprint
