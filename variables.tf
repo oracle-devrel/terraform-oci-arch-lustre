@@ -8,7 +8,7 @@ variable "private_key_path" {}
 
 variable "release" {
   description = "Reference Architecture Release (OCI Architecture Center)"
-  default     = "1.2"
+  default     = "1.2.1"
 }
 
 variable "vpc_cidr" { default = "10.0.0.0/16" }
